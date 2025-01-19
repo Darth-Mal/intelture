@@ -8,8 +8,41 @@ import SettingsIcon from "@mui/icons-material/Settings";
 import AutoAwesomeRoundedIcon from "@mui/icons-material/AutoAwesomeRounded";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareXTwitter } from "@fortawesome/free-brands-svg-icons";
+import { useEffect, useState } from "react";
+
+// Mock data for agents
+const agentsData = [
+  {
+    name: "Fortuna",
+    description:
+      "One click to open a lucky blind box for a chance to win BTC, ETH, Agent Tokens and exclusive rewards",
+    icon: "🎰", // Replace with actual image/icon
+  },
+  {
+    name: "AGIS",
+    description:
+      "A groundbreaking AI Agent that combines the power of GPT with static analysis to detect logic vulnerabilities in smart contracts",
+    icon: "🛡️", // Replace with actual image/icon
+  },
+  {
+    name: "Sentinel",
+    description:
+      "An Autonomous AI that monitors on-chain transactions for suspicious activity and alerts users to potential threats",
+    icon: "🛠️", // Replace with actual image/icon
+  },
+  // Add more agents if needed
+];
 
 const InteltureHomePage = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Auto-scroll logic (you can adjust the speed)
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % agentsData.length);
+    }, 3000); // Change slide every 3 seconds
+    return () => clearInterval(intervalId);
+  }, []);
   return (
     <>
       <div className="navbar">
@@ -20,18 +53,104 @@ const InteltureHomePage = () => {
       <div className="main">
         <div className="main__div">
           <h5 className="main__header">
-            Welcome <span> to Intelure</span>{" "}
+            Welcome to
+            <span>
+              {" "}
+              <br /> Intelure
+            </span>{" "}
           </h5>
           <p className="main__sub">
             Revolutionizing AI Collaboration with Blockchain Technology
           </p>
         </div>
-        <div className="twitter cards__header">
-          <FontAwesomeIcon icon={faSquareXTwitter} /> @intelure
+
+        <div className="whatsNew">
+          <h3 className="whatsNew__header">What's New</h3>
+          <div className="whatsNew__body">
+            <div className="whatsNew__body--1">
+              <div className="date">2025-1-19</div>
+              <div className="events">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              </div>
+            </div>
+            <div className="whatsNew__body--2">
+              <div className="date">2025-1-19</div>
+              <div className="events">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              </div>
+            </div>
+            <div className="whatsNew__body--3">
+              <div className="date">2025-1-19</div>
+              <div className="events">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              </div>
+            </div>
+            <div className="whatsNew__body--4">
+              <div className="date">2025-1-19</div>
+              <div className="events">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      <div className="statsandshena">
+        <div className="quoteandnumbers">
+          <div className="quote">
+            <p className="quote__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+              labore tenetur accusamus iure cumque iste incidunt ea, autem
+              maiores quia eligendi debitis, provident delectus quo quos.
+              Excepturi pariatur libero expedita.
+            </p>
+            <div className="quoter__div">
+              <p>darthMal</p>
+            </div>
+          </div>
+          <div className="numbers">
+            <div className="community">
+              <p className="blue">Community</p>
+              <h1>
+                4 <span>M</span>{" "}
+              </h1>
+              <p className="grey">Registered Wallets</p>
+            </div>
+            <div className="agent__visits">
+              <p className="blue">Agent Visits</p>
+              <h1>
+                5.5 <span>M</span>{" "}
+              </h1>
+              <p className="grey">Total Agent Page Views</p>
+            </div>
+          </div>
+        </div>
 
-      <div className="cards__container">
+        <div className="latest-agents-container">
+          <h2>Latest AI Agents</h2>
+          <div className="agent-display">
+            <div className="agent-info">
+              <div className="agent-icon">
+                {/* Replace emoji with actual icon/image */}
+                {agentsData[currentIndex].icon}
+              </div>
+              <div className="agent-details">
+                <h3>{agentsData[currentIndex].name}</h3>
+                <p>{agentsData[currentIndex].description}</p>
+              </div>
+            </div>
+          </div>
+          <div className="dots-navigation">
+            {agentsData.map((_, index) => (
+              <span
+                key={index}
+                className={`dot ${index === currentIndex ? "active" : ""}`}
+                onClick={() => setCurrentIndex(index)}
+              ></span>
+            ))}
+          </div>
+        </div>
+      </div>
+      {/* <div className="cards__container">
         <div className="cards__header">
           Our Services <AutoAwesomeRoundedIcon style={{ height: "10px" }} />
         </div>
@@ -77,21 +196,34 @@ const InteltureHomePage = () => {
             {<SettingsIcon className="icon" style={{ height: "100px" }} />}
           </div>
         </div>
-      </div>
-
+      </div> */}
       <div className="about">
         <div className="cards__header">
           About Us <AutoAwesomeRoundedIcon style={{ height: "10px" }} />
         </div>
         <div className="about__p">
-          Intelure is a groundbreaking framework that empowers autonomous AI
+          Intelure is a groundbreaking framework that empowtekers autonomous AI
           agents to collaborate in a secure, decentralized, and permissionless
+          environment. By harnessing the power of generative AI, Intelure
+          enables agents to make decisions, complete tasks, and drive human
+          creativity and productivity with minimal human input. Intelure is a
+          groundbreaking framework that empowtekers autonomous AI agents to
+          collaborate in a secure, decentralized, and permissionless
+          environment. By harnessing the power of generative AI, Intelure
+          enables agents to make decisions, complete tasks, and drive human
+          creativity and productivity with minimal human input. Intelure is a
+          groundbreaking framework that empowtekers autonomous AI agents to
+          collaborate in a secure, decentralized, and permissionless
+          environment. By harnessing the power of generative AI, Intelure
+          enables agents to make decisions, complete tasks, and drive human
+          creativity and productivity with minimal human input. Intelure is a
+          groundbreaking framework that empowtekers autonomous AI agents to
+          collaborate in a secure, decentralized, and permissionless
           environment. By harnessing the power of generative AI, Intelure
           enables agents to make decisions, complete tasks, and drive human
           creativity and productivity with minimal human input.
         </div>
       </div>
-
       <div className="highlights">
         <div className="cards__header--highlights">
           <div className="cards__header highlight--header">
@@ -154,6 +286,16 @@ const InteltureHomePage = () => {
             <img src="futuristic-robot-interacting-with-money.jpg" alt="" />
           </div>
         </div>
+      </div>
+      <div className="joinTheCommunity">
+        <div className="joinTheCommunity__container">
+          <div className="joinTheCommunity__header">Join the Community</div>
+          <div className="joinTheCommunity__subtext">
+            Earn points today and get ready for the upcoming airdrop
+          </div>
+        </div>
+
+        <img src="df3ca51f-9b95-4939-8cf1-209a19681131.png" alt="" />
       </div>
     </>
   );
