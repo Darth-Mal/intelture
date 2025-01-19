@@ -348,6 +348,17 @@ body::after {
 /* media query */
 /* Media Query for Mobile Devices */
 @media screen and (max-width: 768px) {
+  /* Hide scrollbar for WebKit browsers (Chrome, Safari, Edge) */
+  .cards__container::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for all browsers using the overflow property */
+  .cards__container {
+    -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer and Edge */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+  }
+
   .navbar {
     padding: 12px 24px;
   }
@@ -384,6 +395,8 @@ body::after {
     font-size: 12px;
     margin: 0 auto; /* Centers the header */
     text-align: center;
+    display: flex;
+    flex-direction: row;
   }
 
   .cards__container {
@@ -402,11 +415,12 @@ body::after {
     gap: 10px;
     width: max-content;
     animation: scrollLeft 80s linear infinite; /* Slower scroll for mobile */
+    overflow: hidden;
   }
 
   .card--1 {
     width: 250px; /* Slightly smaller cards for mobile */
-    height: auto;
+    height: 250px;
     padding: 20px;
     margin-bottom: 10px;
   }
@@ -464,7 +478,6 @@ body::after {
 
   /* Ensuring flexbox layouts adapt on mobile */
   .main__header,
-  .cards__header,
   .cards__container,
   .about,
   .highlights {

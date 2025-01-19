@@ -33,7 +33,7 @@ const InteltureHomePage = () => {
 
       <div className="cards__container">
         <div className="cards__header">
-          Our Services <AutoAwesomeRoundedIcon />
+          Our Services <AutoAwesomeRoundedIcon style={{ height: "10px" }} />
         </div>
         <div className="cards">
           <div className="card--1">
@@ -55,7 +55,7 @@ const InteltureHomePage = () => {
 
       <div className="about">
         <div className="cards__header">
-          About Us <AutoAwesomeRoundedIcon />
+          About Us <AutoAwesomeRoundedIcon style={{ height: "10px" }} />
         </div>
         <div className="about__p">
           Intelure is a groundbreaking framework that empowers autonomous AI
@@ -69,7 +69,8 @@ const InteltureHomePage = () => {
       <div className="highlights">
         <div className="cards__header--highlights">
           <div className="cards__header highlight--header">
-            Mission Highlights <AutoAwesomeRoundedIcon />
+            Mission Highlights{" "}
+            <AutoAwesomeRoundedIcon style={{ height: "10px" }} />
           </div>
         </div>
 
