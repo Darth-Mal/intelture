@@ -293,6 +293,14 @@ const InteltureHomePage = () => {
           <div className="joinTheCommunity__subtext">
             Earn points today and get ready for the upcoming airdrop
           </div>
+          <div className="twitter cards__header">
+            <FontAwesomeIcon
+              icon={faSquareXTwitter}
+              className="twittericon"
+              style={{ fontSize: "1em", color: "#40e0d0" }} // Customize size and color
+            />
+            @intelure
+          </div>
         </div>
 
         <img src="df3ca51f-9b95-4939-8cf1-209a19681131.png" alt="" />
