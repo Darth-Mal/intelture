@@ -361,42 +361,54 @@ body::after {
     margin-top: 60px;
   }
 
+  /* Keep the text and icons in the main header on the same line */
   .main__header {
     font-size: 48px;
     line-height: 50px;
     margin-bottom: 16px;
+    display: flex; /* Ensures text and icons stay on the same line */
+    align-items: center; /* Vertically center icons with text */
+    justify-content: center; /* Centers both text and icons horizontally */
+    flex-wrap: nowrap; /* Prevents wrapping onto a new line */
   }
 
   .main__sub {
     font-size: 10px;
+    text-align: center;
+  }
+
+  /* Center the "Our Services" header */
+  .cards__header {
+    width: auto;
+    padding: 6px;
+    font-size: 12px;
+    margin: 0 auto; /* Centers the header */
+    text-align: center;
   }
 
   .cards__container {
-    flex-direction: column;
-    align-items: flex-start;
     width: 100%;
     padding: 16px;
+    overflow-x: auto; /* Adds horizontal scrolling */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    white-space: nowrap; /* Keeps the cards in one line */
   }
 
+  /* Slow down the scrolling for mobile */
   .cards {
     padding: 16px;
     gap: 10px;
-    flex-direction: column;
-    width: 100%;
-    animation: none;
+    width: max-content;
+    animation: scrollLeft 80s linear infinite; /* Slower scroll for mobile */
   }
 
   .card--1 {
-    width: 100%;
+    width: 250px; /* Slightly smaller cards for mobile */
     height: auto;
     padding: 20px;
     margin-bottom: 10px;
-  }
-
-  .cards__header {
-    width: 30%;
-    padding: 6px;
-    font-size: 10px;
   }
 
   .about {
@@ -450,11 +462,22 @@ body::after {
     filter: blur(80px);
   }
 
+  /* Ensuring flexbox layouts adapt on mobile */
   .main__header,
   .cards__header,
   .cards__container,
   .about,
   .highlights {
     flex-direction: column;
+  }
+}
+
+/* Keeping the scrolling animation for the cards */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%); /* Continuously scroll to the left */
   }
 }
