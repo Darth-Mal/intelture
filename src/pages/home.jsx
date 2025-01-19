@@ -37,19 +37,45 @@ const InteltureHomePage = () => {
         </div>
         <div className="cards">
           <div className="card--1">
-            {<CurrencyBitcoinIcon className="icon" />}
+            {
+              <CurrencyBitcoinIcon
+                style={{ height: "100px" }}
+                className="icon"
+              />
+            }
           </div>
-          <div className="card--1">{<LinkIcon className="icon" />}</div>
-          <div className="card--1">{<SecurityIcon className="icon" />}</div>
-          <div className="card--1">{<NetworkCheckIcon className="icon" />}</div>
-          <div className="card--1">{<SettingsIcon className="icon" />}</div>
           <div className="card--1">
-            {<CurrencyBitcoinIcon className="icon" />}
+            {<LinkIcon className="icon" style={{ height: "100px" }} />}
           </div>
-          <div className="card--1">{<LinkIcon className="icon" />}</div>
-          <div className="card--1">{<SecurityIcon className="icon" />}</div>
-          <div className="card--1">{<NetworkCheckIcon className="icon" />}</div>
-          <div className="card--1">{<SettingsIcon className="icon" />}</div>
+          <div className="card--1">
+            {<SecurityIcon className="icon" style={{ height: "100px" }} />}
+          </div>
+          <div className="card--1">
+            {<NetworkCheckIcon className="icon" style={{ height: "100px" }} />}
+          </div>
+          <div className="card--1">
+            {<SettingsIcon className="icon" style={{ height: "100px" }} />}
+          </div>
+          <div className="card--1">
+            {
+              <CurrencyBitcoinIcon
+                className="icon"
+                style={{ height: "100px" }}
+              />
+            }
+          </div>
+          <div className="card--1">
+            {<LinkIcon className="icon" style={{ height: "100px" }} />}
+          </div>
+          <div className="card--1">
+            {<SecurityIcon className="icon" style={{ height: "100px" }} />}
+          </div>
+          <div className="card--1">
+            {<NetworkCheckIcon className="icon" style={{ height: "100px" }} />}
+          </div>
+          <div className="card--1">
+            {<SettingsIcon className="icon" style={{ height: "100px" }} />}
+          </div>
         </div>
       </div>
 
