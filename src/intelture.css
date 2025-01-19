@@ -112,13 +112,14 @@ body::after {
   font-size: 170px;
   background: linear-gradient(
     90deg,
-    #1e90ff 30%,
-    #00bfff 50%,
-    #ff8c00 85%,
-    #87cefa 100%
+    #1e90ff 0%,
+    #00bfff 30%,
+    #ff8c00 50%,
+    #00bfff 70%,
+    #1e90ff 100%
   );
   background-size: 200% 200%;
-  animation: wave 9s ease infinite;
+  animation: wave 10s ease infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
