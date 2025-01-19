@@ -1,5 +1,5 @@
 body {
-  font-family: "Inter";
+  font-family: Degular;
   width: 100%;
   padding: 0;
   margin: 0;
@@ -240,6 +240,7 @@ body::after {
 }
 
 .latest-agents-container h2 {
+  font-family: Degular;
   color: #40e0d0;
 }
 
@@ -713,4 +714,105 @@ body::after {
   height: 250%;
   object-fit: cover;
   border-radius: inherit;
+}
+
+.empoweringDiv {
+  color: white;
+  padding: 20px;
+}
+
+.header-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.header-section h1 {
+  font-family: Degular;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.header-section p {
+  font-size: 12px;
+}
+
+.earth-container {
+  position: relative;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  opacity: 0.4;
+  /* align-items: center; */
+}
+
+.earth {
+  position: absolute;
+}
+
+.grid-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.highlighted {
+  background-color: #40e0d0; /* Turquoise */
+  color: black;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.action-btn {
+  background-color: #000000;
+  color: #40e0d0;
+  border: 1px solid #40e0d0;
+  padding: 16px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+.action-btn:hover {
+  background-color: #40e0d0;
+  color: #000000;
+}
+
+.info-section {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.info-box {
+  width: 30%;
+  padding: 20px;
+  /* background: rgba(255, 255, 255, 0.1); */
+  border-radius: 8px;
+  color: #40e0d0; /* Turquoise */
+  font-family: Degular;
+}
+
+.info-box p {
+  font-size: 14px;
+  color: grey;
+}
+
+h1,
+h3,
+h4 {
+  color: #40e0d0;
+}
+
+.chart {
+  width: 100%;
+}
+
+.chart img {
+  width: 100%;
 }

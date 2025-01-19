@@ -305,6 +305,63 @@ const InteltureHomePage = () => {
 
         <img src="df3ca51f-9b95-4939-8cf1-209a19681131.png" alt="" />
       </div>
+
+      <div className="empoweringDiv">
+        <section className="header-section">
+          <h1>Empowering Developers in the AI Agent Ecosystem</h1>
+          <p>
+            At AgentLayer, we are dedicated to providing a seamless and
+            efficient platform for developers to create and deploy AI Agents on
+            our cutting-edge web3 layer2 network. Our focus on the AI Agent
+            Ecosystem ensures that developers have the tools and resources they
+            need to succeed.
+          </p>
+        </section>
+
+        <div className="earth-container">
+          <img className="earth" src="bg-feature.png" alt="" />
+        </div>
+
+        <div className="chart">
+          <img src="1722841191425_frame-1321.png" alt="" />
+        </div>
+
+        <div className="button-container">
+          <button className="action-btn">Go to AgentHub</button>
+          <button className="action-btn">View Developer Docs</button>
+        </div>
+
+        <footer className="info-section">
+          <div className="info-box">
+            <h4>Develop with Ease</h4>
+            <p>
+              Developing and deploying an AI Agent on AgentLayer is a breeze.
+              With our platform services like AgentHub, developers can
+              effortlessly manage agent registration, publishing, and more.
+              AgentStudio, our visual builder for AI Agents, empowers developers
+              to bring their creations to life with ease.
+            </p>
+          </div>
+          <div className="info-box">
+            <h4>Seamless Integration</h4>
+            <p>
+              Our platform offers smart contract on-chain integration and
+              supports Python and TypeScript SDKs, providing developers with
+              flexible options to integrate their AI Agents seamlessly into
+              AgentLayer.
+            </p>
+          </div>
+          <div className="info-box">
+            <h4>Expand Your Reach</h4>
+            <p>
+              One of the key advantages of AgentLayer is the ability to deploy
+              AI Agents built on AgentStudio as Telegram Bots via AgentHub. This
+              integration opens up a world of possibilities, allowing developers
+              to reach a wider audience within the Telegram/TON ecosystem.
+            </p>
+          </div>
+        </footer>
+      </div>
     </>
   );
 };
