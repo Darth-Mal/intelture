@@ -395,14 +395,12 @@ body::after {
 
 .about__p {
   color: #ffffff;
-  padding: 32px;
   overflow-wrap: break-word;
   font-size: 18px;
   font-weight: 300;
   width: 70%;
-  text-align: center;
   font-size: 14px;
-  width: 90%;
+  width: 100%;
 }
 /* Common Styling for Both Sections with Enhanced Glassmorphism */
 .highlights {
@@ -836,4 +834,19 @@ h4 {
 
 .chart img {
   width: 100%;
+}
+
+.earth-container {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.earth-video {
+  position: absolute;
+  width: 100%;
+  opacity: 0.3;
 }
