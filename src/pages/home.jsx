@@ -9,6 +9,7 @@ import AutoAwesomeRoundedIcon from "@mui/icons-material/AutoAwesomeRounded";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareXTwitter } from "@fortawesome/free-brands-svg-icons";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 // Mock data for agents
 
@@ -35,7 +36,8 @@ const InteltureHomePage = () => {
 
       <div className="navbar">
         <div className="navbar__logo">
-          <h3>Intelure</h3>
+          <img className="logo" src="logo.jpg" alt="" />
+          <h3 className="navbar__logo--h3">Intelure</h3>
         </div>
       </div>
       <div className="main">
@@ -86,7 +88,7 @@ const InteltureHomePage = () => {
         </div>
 
         <div className="button-container">
-          <button className="action-btn">Go to AgentHub</button>
+          {/* <button className="action-btn">Go to AgentHub</button> */}
           <button className="action-btn">View Developer Docs</button>
         </div>
 
@@ -122,7 +124,7 @@ const InteltureHomePage = () => {
         </footer>
       </div>
 
-      <div className="highlights">
+      {/* <div className="highlights">
         <div className="cards__header--highlights">
           <div className="cards__header highlight--header">
             Mission Highlights{" "}
@@ -184,21 +186,24 @@ const InteltureHomePage = () => {
             <img src="futuristic-robot-interacting-with-money.jpg" alt="" />
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="joinTheCommunity">
         <div className="joinTheCommunity__container">
           <div className="joinTheCommunity__header">Join the Community</div>
           <div className="joinTheCommunity__subtext">
             Earn points today and get ready for the upcoming airdrop
           </div>
-          <div className="twitter cards__header">
-            <FontAwesomeIcon
-              icon={faSquareXTwitter}
-              className="twittericon"
-              style={{ fontSize: "1em", color: "#40e0d0" }} // Customize size and color
-            />
-            @intelure
-          </div>
+
+          <Link className="no-underline" to="https://x.com/intelure">
+            <div className="twitter cards__header">
+              <FontAwesomeIcon
+                icon={faSquareXTwitter}
+                className="twittericon"
+                style={{ fontSize: "1em", color: "#40e0d0" }} // Customize size and color
+              />
+              @intelure
+            </div>
+          </Link>
         </div>
 
         <img src="df3ca51f-9b95-4939-8cf1-209a19681131.png" alt="" />
