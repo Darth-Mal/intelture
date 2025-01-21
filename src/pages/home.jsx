@@ -55,16 +55,23 @@ const InteltureHomePage = () => {
         </div>
 
         <div className="whatsNew">
-          <h3 className="whatsNew__header">About Us</h3>
+          <h3 className="whatsNew__header">
+            Understanding the Intelure Agent Layer
+          </h3>
           <div className="whatsNew__body">
             <div className="whatsNew__body--1">
               <div className="about__p">
-                Intelure is a groundbreaking framework that empowers autonomous
-                AI agents to collaborate in a secure, decentralized, and
-                permissionless environment. By harnessing the power of
-                generative AI, Intelure enables agents to make decisions,
-                complete tasks, and drive human creativity and productivity with
-                minimal human input.
+                The Intelure AgentLayer is an innovative project that aims to
+                create a decentralized, permissionless, secure and reliable
+                network for autonomous AI agents to collaborate and coordinate.
+                Intelure leverages the power of generative AI driven by large
+                language models (LLMs) to enable AI agents to make decisions and
+                complete tasks autonomously with minimal human intervention.
+                Intelure Agent Layer envisions a network of vertical and
+                personalized AI agents that can transform various industries and
+                professions, turbo-charge human’s creative potential and
+                productivity, and make artificial intelligence friends instead
+                of foes to humanity.
               </div>
             </div>
           </div>
@@ -75,9 +82,9 @@ const InteltureHomePage = () => {
         <section className="header-section">
           <h1>Empowering Developers in the AI Agent Ecosystem</h1>
           <p>
-            At AgentLayer, we are dedicated to providing a seamless and
-            efficient platform for developers to create and deploy AI Agents on
-            our cutting-edge web3 layer2 network. Our focus on the AI Agent
+            At Intelure, we are dedicated to providing a seamless and efficient
+            platform for developers to create and deploy AI Agents on our
+            cutting-edge web3 layer2 network. Our focus on the AI Agent
             Ecosystem ensures that developers have the tools and resources they
             need to succeed.
           </p>
@@ -94,13 +101,13 @@ const InteltureHomePage = () => {
 
         <footer className="info-section">
           <div className="info-box">
-            <h4>Develop with Ease</h4>
+            <h4>Develop Effortlessly </h4>
             <p>
-              Developing and deploying an AI Agent on AgentLayer is a breeze.
-              With our platform services like AgentHub, developers can
-              effortlessly manage agent registration, publishing, and more.
-              AgentStudio, our visual builder for AI Agents, empowers developers
-              to bring their creations to life with ease.
+              Developing and deploying an AI Agent on Intelure is a breeze. With
+              our platform services like AgentHub, developers can effortlessly
+              manage agent registration, publishing, and more. AgentStudio, our
+              visual builder for AI Agents, empowers developers to bring their
+              creations to life with ease.
             </p>
           </div>
           <div className="info-box">
@@ -115,10 +122,11 @@ const InteltureHomePage = () => {
           <div className="info-box">
             <h4>Expand Your Reach</h4>
             <p>
-              One of the key advantages of AgentLayer is the ability to deploy
-              AI Agents built on AgentStudio as Telegram Bots via AgentHub. This
-              integration opens up a world of possibilities, allowing developers
-              to reach a wider audience within the Telegram/TON ecosystem.
+              Expand Your Reach One of the key advantages of Intelure is the
+              ability to deploy AI Agents built on AgentStudio as Telegram Bots
+              via AgentHub. This integration opens up a world of possibilities,
+              allowing developers to reach a wider audience within the
+              Telegram/TON ecosystem.
             </p>
           </div>
         </footer>
@@ -199,7 +207,7 @@ const InteltureHomePage = () => {
               <FontAwesomeIcon
                 icon={faSquareXTwitter}
                 className="twittericon"
-                style={{ fontSize: "1em", color: "#40e0d0" }} // Customize size and color
+                style={{ fontSize: "1.3em", color: "#40e0d0" }} // Customize size and color
               />
               @intelure
             </div>
