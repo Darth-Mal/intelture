@@ -355,8 +355,11 @@ body::after {
 
 .twitter.cards__header {
   width: fit-content;
-  padding: 4px;
+  padding: 8px;
   margin-top: 10px;
+  border-radius: 30px;
+  font-size: 18px;
+  gap: 8px;
 }
 
 .icon {

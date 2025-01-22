@@ -207,7 +207,7 @@ const InteltureHomePage = () => {
               <FontAwesomeIcon
                 icon={faSquareXTwitter}
                 className="twittericon"
-                style={{ fontSize: "1.3em", color: "#40e0d0" }} // Customize size and color
+                style={{ fontSize: "1.5em", color: "#40e0d0" }} // Customize size and color
               />
               @intelure
             </div>
