@@ -95,8 +95,12 @@ const InteltureHomePage = () => {
         </div>
 
         <div className="button-container">
-          {/* <button className="action-btn">Go to AgentHub</button> */}
-          <button className="action-btn">View Developer Docs</button>
+          <Link
+            className="no-underline"
+            to="https://intelure-1.gitbook.io/docs"
+          >
+            <button className="action-btn">View Developer Docs</button>
+          </Link>
         </div>
 
         <footer className="info-section">
